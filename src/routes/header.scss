@@ -1,0 +1,66 @@
+@use './layout' as use;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    hr{
+        width:80vw;
+        background-color: use.$preto;
+        border: none;
+        height: 2px;
+    }
+
+    h2{
+        color: use.$preto;
+        font-size: 3vw;
+        @include use.schoolbell(400);
+        span{
+            color: use.$rosa;
+        }
+    }
+
+    div {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        gap: 3vw;
+
+        h1 {
+            color: use.$preto;
+            transition: all 1s ease-in-out;
+            cursor: default;
+            font-size: 7vw;
+            @include use.dynapuff(400);
+            text-align: end;
+        }
+
+        h1.nome {
+            margin-left: -15vw;
+            min-width: 8ch;
+            display: inline-block;
+            text-align: end;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+
+
+        h1.mari {
+            color: use.$amarelo;
+        }
+
+        h1.mona {
+            color: use.$azul;
+        }
+    }
+}

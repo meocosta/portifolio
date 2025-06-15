@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Schoolbell&display=swap');
+
+$azul: #3A86FF;
+$amarelo: #FFBE0B;
+$roxo: #8338EC;
+$rosa: #FF006E;
+$preto: #31393c;
+
+@mixin schoolbell ($size: 400) {
+  font-family: "Schoolbell", cursive;
+  font-weight: $size;
+  font-style: normal;
+}
+
+@mixin dynapuff ($size: 400) {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: $size;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
