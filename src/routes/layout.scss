@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Schoolbell&display=swap');
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+@mixin t($temp: 1s, $elements: all){ transition: $elements $temp ease-in-out;}
+
 $azul: #3A86FF;
 $amarelo: #FFBE0B;
 $roxo: #8338EC;
 $rosa: #FF006E;
 $preto: #31393c;
+$branco: #fefae0;
 
 @mixin schoolbell ($size: 400) {
   font-family: "Schoolbell", cursive;

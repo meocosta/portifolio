@@ -3,4 +3,4 @@
 </script>
 
 <Header/>
-<main></main>
+<slot/>

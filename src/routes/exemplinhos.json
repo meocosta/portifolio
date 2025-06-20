@@ -1,0 +1,38 @@
+[
+    {
+        "nome": "carrosel de duas informações",
+        "href": "carrocel",
+        "foto": true,
+        "descrição": "informação demais? aqui a gente resolveu com um carrocel"
+    },
+    {
+        "nome": "galeria de imagens",
+        "href": "GaleriaDinamica",
+        "foto": false,
+        "descrição": "Nada aqui é fixo — até as imagens gostam de explorar novos lugares."
+    },
+    {
+        "nome": "carrosel de informações",
+        "href": "carrocel",
+        "foto": false,
+        "descrição": "informação demais? aqui a gente resolveu com um carrocel"
+    },
+    {
+        "nome": "carrosel de informações",
+        "href": "carrocel",
+        "foto": false,
+        "descrição": "informação demais? aqui a gente resolveu com um carrocel"
+    },
+    {
+        "nome": "carrosel de informações",
+        "href": "carrocel",
+        "foto": false,
+        "descrição": "informação demais? aqui a gente resolveu com um carrocel"
+    },
+    {
+        "nome": "carrosel de informações",
+        "href": "carrocel",
+        "foto": false,
+        "descrição": "informação demais? aqui a gente resolveu com um carrocel"
+    }
+]

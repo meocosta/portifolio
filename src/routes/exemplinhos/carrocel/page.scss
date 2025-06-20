@@ -1,0 +1,66 @@
+@use "./../../layout.scss" as use;
+
+#titulo {
+    text-align: center;
+    font-size: 5vw;
+    margin: 2vw;
+    @include use.dynapuff(400);
+    color: use.$preto;
+}
+
+#bolinhas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+
+    .ball {
+        width: 1vw;
+        height: 1vw;
+        border-radius: 100px;
+    }
+}
+
+#carrocel {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+
+    div {
+        width: 50vw;
+        height: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+        p {
+            font-size: 3.5vw;
+            color: use.$rosa;
+            @include use.schoolbell(400);
+        }
+    }
+
+    #titleDiv {
+        background-color: use.$rosa;
+
+        h3 {
+            color: white;
+            font-size: 5vw;
+            @include use.dynapuff(400);
+        }
+    }
+}
+
+// <div id="bolinhas">
+//     <div class="ball" style="background-color: {controller ? '#FF006E' : '#31393c'}"></div>
+//     <div class="ball" style="background-color: {controller ? '#31393c' : '#FF006E'}"></div>
+// </div>
+// <section id="carrocel">
+//     <div>
+//         <h2>{select.nome}</h2>
+//     </div>
+//     <div>
+//         <p>{select.text}</p>
+//     </div>
+// </section>

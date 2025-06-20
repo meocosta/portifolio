@@ -1,0 +1,74 @@
+@use "./../../layout.scss" as use;
+
+#galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 0px -10px 50px use.$azul;
+    overflow-x: hidden;
+}
+
+.imagem{
+    cursor: default;
+    background-position: center;
+    background-size: cover;
+    width: 33vw;
+    height: 33vw;
+    #pretoGaleria{
+        position: absolute;
+        width: 32.9vw;
+        height: 33vw;
+        background-color: black;
+        opacity: 0%;
+        padding: 10px;
+    }
+
+    #txt{
+        padding: 40px;
+        position: absolute;
+        width: 30vw;
+        height: 30vw;
+        opacity: 0%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        p{
+            @include use.schoolbell();
+            font-size: 4vw;
+            color: white;
+        }
+    }
+}
+
+.imagem:hover{
+    #pretoGaleria{
+        opacity: 70%
+    }
+    #txt{
+        opacity:100%
+    }
+}
+
+#TituloGaleria{
+    font-size: 7vw;
+    @include use.dynapuff();
+    text-align: center;
+    color: use.$azul;
+    margin-bottom: 10vh;
+}
+
+button{
+    width: 7vw;
+    height: 7vh;
+    background-color: use.$azul;
+    border-radius: 100px;
+    border: none;
+    margin: 20px;
+    @include use.schoolbell();
+    font-size: 2vw;
+    color: use.$branco;
+}
+
+#GaleriaVivaSection{
+    overflow: hidden;
+    width: 98.5vw;
+}
